@@ -39,13 +39,19 @@
 ```bash
 git clone https://github.com/your-username/codeblaze.git
 cd codeblaze
+```
 
-2. Install Dependencies
+### 2. Install Dependencies
+
+```bash
 npm install
+```
 
-3. Configure Environment Variables
+### 3. Configure Environment Variables
+
 Create a .env.local file and add your secrets:
 
+```bash
 MONGODB_URI=your_mongodb_connection_string
 GOOGLE_CLIENT_ID=your_google_oauth_client_id
 GOOGLE_CLIENT_SECRET=your_google_oauth_client_secret
@@ -53,12 +59,18 @@ NEXTAUTH_SECRET=random_generated_secret
 NEXTAUTH_URL=http://localhost:3000
 GEMINI_API_KEY=your_gemini_api_key
 PAYPAL_CLIENT_ID=your_paypal_client_id
+```
 
-🧪 Run the App Locally
+### 🧪 Run the App Locally
+
+```bash
 npm run dev
+```
+
 Open http://localhost:3000 in your browser.
 
-✨ How It Works
+### ✨ How It Works
+
 Enter a prompt like “Build me a landing page with a navbar and hero section”.
 
 CodeBlaze uses Gemini API to convert the text into React + Tailwind code.
@@ -67,26 +79,28 @@ Chat to enhance the app: “Add a dark mode toggle” or “Include a pricing se
 
 Export or preview the full project structure with code.
 
-💳 PayPal Integration
+### 💳 PayPal Integration
+
 Use the PayPal sandbox for testing. When ready, switch to live credentials to accept real payments.
 
-🖼️ Screenshots
+### 🖼️ Screenshots
 
 Chat with CodeBlaze to build and enhance web apps
-
 
 Preview the actual code for your project instantly
 
 instantly
 
-📁 Project Structure
-/components       → UI & shared components
-/pages/api        → Server-side routes (auth, AI, payments)
-/lib              → Helpers (MongoDB, AI models)
-/styles           → Tailwind global styles
-/public           → Static assets
+### 📁 Project Structure
 
-📦 Deployment
+/components → UI & shared components
+/pages/api → Server-side routes (auth, AI, payments)
+/lib → Helpers (MongoDB, AI models)
+/styles → Tailwind global styles
+/public → Static assets
+
+### 📦 Deployment
+
 CodeBlaze is fully deployable to:
 
 Vercel
@@ -95,14 +109,16 @@ CodeSandbox
 
 Render
 
-🙌 Contributing
+### 🙌 Contributing
+
 Pull requests and suggestions are welcome! Please open an issue to discuss what you'd like to change.
 
-📄 License
+### 📄 License
+
 This project is open source under the MIT License.
 
-📬 Contact
+### 📬 Contact
+
 For support, feedback, or collaboration:
 📧 usamazafaransari@gmail.com
 🐦 Twitter: @yourhandle
-```
