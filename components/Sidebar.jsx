@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { Menu, Home, Settings, LayoutDashboard, MessageCircle, MessageCircleCode, LayoutDashboardIcon, LucideLayoutDashboard, PanelLeftDashedIcon, LucidePanelLeftDashed, PanelLeft } from 'lucide-react';
+import { Menu, Home, Settings, LayoutDashboard, MessageCircle, MessageCircleCode, LayoutDashboardIcon, LucideLayoutDashboard, PanelLeftDashedIcon, LucidePanelLeftDashed, PanelLeft, Wallet } from 'lucide-react';
 import { cn } from '@/lib/utils'; // Optional utility for className merging
 import WorkspaceHistory from './custom/WorkspaceHistory';
 import Footer from './custom/Footer';
@@ -12,8 +12,8 @@ export default function Sidebar() {
 
   const menuItems = [
     { label: 'Start Chat', href: '/', icon: <MessageCircleCode size={20} /> },
-    { label: 'Home', href: '/home', icon: <Home size={20} /> },
-    { label: 'Settings', href: '/settings', icon: <Settings size={20} /> },
+    { label: 'Home', href: '/', icon: <Home size={20} /> },
+    { label: 'Subscription', href: '/pricing', icon: <Wallet size={20} /> },
   ];
 
   return (
@@ -29,12 +29,13 @@ export default function Sidebar() {
           <PanelLeft size={20} />
         </button>
       </div>
-      <WorkspaceHistory/>
+      {!collapsed && <WorkspaceHistory/>}
+      
 
       <nav className="mt-4">
         {menuItems.map((item) => (
           <Link
-            key={item.href}
+            key={item.label}
             href={item.href}
             className="flex items-center gap-4 px-4 py-3 text-sm text-gray-300 hover:bg-gray-100 hover:text-gray-800"
           >
@@ -43,7 +44,9 @@ export default function Sidebar() {
           </Link>
         ))}
       </nav>
+      {/* 
       <Footer/>
+      */}
     </div>
   );
 }

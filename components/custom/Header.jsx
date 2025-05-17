@@ -6,7 +6,7 @@ import Button from '../Button'
 import Colors from '@/data/Colors'
 import { UserDetailContext } from '@/context/UserDetailContext'
 import { LucideDownload, Rocket } from 'lucide-react'
-import { usePathname } from 'next/navigation'
+import { usePathname, useRouter } from 'next/navigation'
 import Link from 'next/link'
 import SignInDialog from './SignInDialog';
 import { googleLogout } from '@react-oauth/google';
@@ -14,11 +14,13 @@ import { googleLogout } from '@react-oauth/google';
 const Header = () => {
   const {userDetail, setUserDetail} = useContext(UserDetailContext);
  const [openDialog, setOpenDialog] = useState(false);
+ const router = useRouter();
 
  const userLogout=()=>{
 googleLogout();
 setUserDetail("");
 localStorage.setItem("user", "");
+router.push('/')
  }
   return (
     <div className='p-4 flex flex-row justify-between items-center'>
