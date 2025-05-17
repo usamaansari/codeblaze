@@ -19,16 +19,16 @@
 
 ## 🧰 Tech Stack
 
-| Tech              | Purpose                                  |
-| ----------------- | ---------------------------------------- |
-| **Next.js**       | React-based full-stack framework         |
-| **MongoDB Atlas** | Cloud-based NoSQL database               |
-| **Gemini API**    | AI text-to-code and chat processing      |
-| **PayPal SDK**    | Payment integration                      |
-| **NextAuth.js**   | Google OAuth authentication              |
-| **Lucide Icons**  | Lightweight SVG icons                    |
-| **Tailwind CSS**  | Utility-first CSS framework              |
-| **CodeSandbox**   | Online editor for real-time code preview |
+| Tech               | Purpose                                  |
+| ------------------ | ---------------------------------------- |
+| **Next.js**        | React-based full-stack framework         |
+| **MongoDB Atlas**  | Cloud-based NoSQL database               |
+| **Gemini API**     | AI text-to-code and chat processing      |
+| **PayPal SDK**     | Payment integration                      |
+| **R OAuth2Google** | Google OAuth authentication              |
+| **Lucide Icons**   | Lightweight SVG icons                    |
+| **Tailwind CSS**   | Utility-first CSS framework              |
+| **CodeSandbox**    | Online editor for real-time code preview |
 
 ---
 
@@ -52,13 +52,11 @@ npm install
 Create a .env.local file and add your secrets:
 
 ```bash
-MONGODB_URI=your_mongodb_connection_string
-GOOGLE_CLIENT_ID=your_google_oauth_client_id
-GOOGLE_CLIENT_SECRET=your_google_oauth_client_secret
-NEXTAUTH_SECRET=random_generated_secret
-NEXTAUTH_URL=http://localhost:3000
-GEMINI_API_KEY=your_gemini_api_key
-PAYPAL_CLIENT_ID=your_paypal_client_id
+NEXT_PUBLIC_MONGODB=your_mongodb_connection_string
+NEXT_PUBLIC_GOOGLE_AUTH_KEY=your_google_oauth_client_id
+NEXT_PUBLIC_PORT=http://localhost:3000
+NEXT_PUBLIC_GEMINI_API_KEY=your_gemini_api_key
+NEXT_PUBLIC_PAYPAL_CLIENT_ID=your_paypal_client_id
 ```
 
 ### 🧪 Run the App Locally
@@ -121,4 +119,6 @@ This project is open source under the MIT License.
 
 For support, feedback, or collaboration:
 📧 usamazafaransari@gmail.com
-🐦 Twitter: @yourhandle
+💼 LinkedIn: [Usama Ansari]
+
+[Usama Ansari]: https://www.linkedin.com/in/usama-ansari-4b845072/

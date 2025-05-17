@@ -32,7 +32,7 @@ const googleLogin = useGoogleLogin({
 
     return (
         <div className="p-8">
-      <Dialog triggerText="Launch Modal" openDialog2={openDialog1}>
+      <Dialog triggerText="Get Started" openDialog2={openDialog1} >
         <div className='flex flex-col items-center justify-center gap-3'>
         <h2 className="text-2xl text-center font-bold mb-2">{Lookup.SIGNIN_HEADING}</h2>
         <p className='mt-2 text-center'>{Lookup.SIGNIN_SUBHEADING}</p>

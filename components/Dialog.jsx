@@ -29,7 +29,7 @@ export default function Dialog({ triggerText = "Open Dialog", openDialog2, child
       {/* Trigger Button */}
       <button
         onClick={() => setOpen(true)}
-        className="px-4 py-2 rounded bg-black text-white hover:bg-neutral-800 transition"
+        className="px-4 py-2 rounded-lg text-white font-semibold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 hover:opacity-90 transition duration-300"
       >
         {triggerText}
       </button>

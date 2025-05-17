@@ -35,10 +35,12 @@ IsAuthenticated();
   const IsAuthenticated = async() =>{
     if(typeof window!==undefined)
     {
+      if(localStorage.getItem('user')){
       const user =JSON.parse(localStorage.getItem('user'));
       const result = await axios.get(`/api/user?email=${user?.email}`);
       console.log(result?.data?.users[0]);
       setUserDetail(result?.data?.users[0]);
+      }
     }
   }
   return (
